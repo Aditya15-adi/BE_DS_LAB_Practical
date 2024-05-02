@@ -1,0 +1,46 @@
+Assign 1: 
+
+Terminal 1: 
+
+javac *.java
+rmiregistry
+
+Terminal 2:
+java Server
+
+Terminal 3:
+java Client
+
+
+Assign 2:
+T1:
+idlj -fall ReverseModule.idl
+javac *.java ReverseModule/*.java
+orbd -ORBInitialPort 1056&
+java ReverseServer -ORBInitialPort 1056& 
+
+T2:
+java ReverseClient -ORBInitialPort 1056 -ORBInitialHost localhost
+
+
+Assign 3:
+mpicc prog.c
+mpirun --oversubscribe -np 4 ./a.out
+
+
+Assign 4:
+T1: python3 server.py
+T2: python3 client.py
+
+Assign 5:
+javac TokenRing.java
+java TokenRing
+
+
+Assign 6:
+
+javac BullyAlgoExample.java
+java BullyAlgoExample
+
+javac RingAlgorithm.java
+java RingAlgorithm
